@@ -1,0 +1,17 @@
+<p>emp works!</p>
+<table border="5">
+    <tr>
+        <th>EmpNo</th>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Desig</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let u of emps | async">
+        <td>{{u.empno}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.dept}}</td>
+        <td>{{u.desig}}</td>
+        <td>{{u.basic}}</td>
+    </tr>
+</table>

@@ -1,0 +1,36 @@
+<p>agent works!</p>
+
+<table border="3">
+    <tr>
+        <th>Agent Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+        <th>Premium</th>
+        <th>Show</th>
+    </tr>
+    <tr *ngFor="let e of agent">
+    <td>
+        {{e.agentId}}
+    </td>  
+    <td>
+        {{e.firstName}}
+    </td>  
+    <td>
+        {{e.lastName}}
+    </td>  
+    <td>
+        {{e.city}}
+    </td>  
+    <td>
+        {{e.premium}}
+    </td>   
+    <td>
+        <input type="button" value="show"
+        (click)="show(e.firstName)">
+    </td> 
+    </tr>
+</table>
+<p>
+    The Selected name is : {{firstName}}
+</p>

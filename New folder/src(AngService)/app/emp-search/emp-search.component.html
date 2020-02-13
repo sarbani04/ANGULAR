@@ -1,0 +1,6 @@
+<p>emp-search works!</p>
+Employ No :
+<input type="number" name="empno" [(ngModel)]="empno" />
+
+<input type="button" value = "Show" (click)="show()" />
+Name : {{(emp | async)?.name}}

@@ -1,0 +1,11 @@
+<p>login works!</p>
+
+<form name="frmlogin" (submit)="validateMe()">
+    User Name :
+    <input type="text" name="userName" [(ngModel)]="userName" />
+    <br/><br/>
+    Password :
+    <input type="password" name="password" [(ngModel)]="password">
+    <br/><br/>
+    <input type="submit" value="Validate Me" />
+</form>

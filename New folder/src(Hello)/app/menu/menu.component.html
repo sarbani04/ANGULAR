@@ -1,0 +1,27 @@
+<p>menu works!</p>
+<!-- <app-first></app-first>
+<hr/>
+<app-second></app-second>
+<hr/>
+<app-third></app-third>
+<hr/>
+<app-fourth></app-fourth>
+<hr/>
+<app-calc></app-calc>
+<hr/>
+<app-employ></app-employ>
+<hr/>
+<app-agent></app-agent>
+<hr/>
+<app-employ-list></app-employ-list>
+<hr/> -->
+<br>
+<a [routerLink] = "['/menu', {outlets: {'data': ['first']}}]">First</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink] = "['/menu', {outlets: {'data': ['second']}}]">Second</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink] = "['/menu', {outlets: {'data': ['calc']}}]">Calc</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink] = "['/menu', {outlets: {'data': ['employ']}}]">Employ</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink] = "['/menu', {outlets: {'data': ['employ-list']}}]">Employ List</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink] = "['/menu', {outlets: {'data': ['agent']}}]">Agent</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value = "calc" (click)="show()" />
+<hr/><br/><br/>
+<router-outlet name='data'></router-outlet>
